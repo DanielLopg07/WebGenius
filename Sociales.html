@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<header>
+		<img width="100" height="auto" src="WebGeniusLogo.png" class="logo"></img>
+		<ul>
+			<li><a href="index.html">Inicio</a></li> 
+			<li><a href="Estética.html">Estética</a></li> 
+			<li><a href="Administración.html">Administración</a></li> 
+			<li><a href="Ética.html">Ética</a></li> 
+			<li><a href="Contabilidad.html">Contabilidad</a></li> 
+			<li><a href="Computación.html">Computación</a></li> 
+			<li><a href="Ingles.html">Inglés</a></li> 
+			<li><a href="Matemáticas.html">Matemáticas</a></li> 
+			<li><a href="Religión.html">Religión</a></li> 
+		</ul>
+	</header>
+	<section>
+		<img src="stars.png" id="stars">
+		<img src="moon.png" id="moon">
+		<img src="mountains_behind.png" id="mountains_behind">
+		<h2 id="Text">Sociales</h2>
+		<a href="#sec" id="btn">Iniciar</a>
+		<img src="mountains_front.png" id="mountains_front">
+	</section>
+	<div class="sec" id="sec">
+
+		<h2>La Primera Guerra Mundial</h2>
+		<p>También conocida como la Gran Guerra, ocurrió entre 1914 y 1918. Fue desencadenada por el asesinato del archiduque Francisco Fernando de Austria en Sarajevo. Los bandos involucrados fueron las Potencias Centrales, lideradas por Alemania, Austria-Hungría y el Imperio Otomano, y la Entente, liderada por el Reino Unido, Francia y Rusia. La guerra resultó en enormes pérdidas humanas y territoriales, así como en la disolución de varios imperios.</p>
+		<center><img height="300" width="auto" src="PrimeraG.png" id="PrimeraG"></center>
+		<br><br>
+
+		<h2>La Segunda Guerra Mundial</h2>
+		<p>De 1939 a 1945, tuvo múltiples causas, incluidos los términos del Tratado de Versalles, el surgimiento del fascismo en Alemania e Italia, y la invasión alemana de Polonia. Los bandos enfrentados fueron las Potencias del Eje, lideradas por Alemania, Italia y Japón, y los Aliados, liderados por Francia, el Reino Unido, Estados Unidos y la Unión Soviética. La guerra resultó en la división de Alemania y el inicio de la Guerra Fría entre Estados Unidos y la Unión Soviética, así como en cambios significativos en el orden mundial.</p>
+		<center><img height="300" width="auto" src="SegundaG.png" id="SegundaG"></center>
+		<br><br>
+
+		<br><br>
+		<center><iframe width="700" height="400" src="https://www.youtube.com/embed/TSF1lEBdfQs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
+
+		<center><a href="indexS.html" id="btn">Iniciar Prueba</a></center>
+		<br><br><br><br>
+		
+	</div>
+	<script>
+		let stars = document.getElementById('stars')
+		let moon = document.getElementById('moon')
+		let mountains_behind = document.getElementById('mountains_behind')
+		let Text = document.getElementById('Text')
+		let btn = document.getElementById('btn')
+		let mountains_front = document.getElementById('mountains_front')
+		let header = document.querySelector('header')
+
+		window.addEventListener('scroll', function(){
+			let value = window.scrollY;
+			stars.style.left = value * 0.25 + 'px';
+			moon.style.top = value * 1.05 + 'px';
+			mountains_behind.style.top = value * 0.5 + 'px';
+			mountains_front.style.top = value * 0 + 'px';
+			Text.style.marginRight = value * 4 + 'px';
+			Text.style.marginTop = value * 1.5 + 'px';
+			btn.style.marginTop = value * 1.5 + 'px';
+			header.style.top = value * 0.5 + 'px';
+		})
+	</script>
+</body>
+</html>

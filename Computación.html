@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<header>
+		<img width="100" height="auto" src="WebGeniusLogo.png" class="logo"></img>
+		<ul>
+			<li><a href="index.html">Inicio</a></li> 
+			<li><a href="Estética.html">Estética</a></li> 
+			<li><a href="Administración.html">Administración</a></li> 
+			<li><a href="Ética.html">Ética</a></li> 
+			<li><a href="Contabilidad.html">Contabilidad</a></li> 
+			<li><a href="Ingles.html">Inglés</a></li> 
+			<li><a href="Sociales.html">Sociales</a></li> 
+			<li><a href="Matemáticas.html">Matemáticas</a></li> 
+			<li><a href="Religión.html">Religión</a></li> 
+		</ul>
+	</header>
+	<section>
+		<img src="stars.png" id="stars">
+		<img src="moon.png" id="moon">
+		<img src="mountains_behind.png" id="mountains_behind">
+		<h2 id="Text">Inicio</h2>
+		<a href="#sec" id="btn">Iniciar</a>
+		<img src="mountains_front.png" id="mountains_front">
+	</section>
+	<div class="sec" id="sec">
+
+    <h2>LibreOffice</h2>
+    <p>LibreOffice es una suite ofimática de código abierto y gratuita, desarrollada por The Document Foundation. Es una alternativa a otras suites ofimáticas como Microsoft Office. LibreOffice incluye las siguientes aplicaciones principales:</p>
+    <ul>
+        <li><b>Writer:</b> un procesador de textos similar a Microsoft Word.</li>
+        <li><b>Calc:</b> una hoja de cálculo similar a Microsoft Excel.</li>
+        <li><b>Impress:</b> una herramienta para crear presentaciones similar a Microsoft PowerPoint.</li>
+        <li><b>Draw:</b> una herramienta de dibujo y diagramas.</li>
+        <li><b>Base:</b> una base de datos similar a Microsoft Access.</li>
+        <li><b>Math:</b> un editor de fórmulas matemáticas.</li>
+    </ul>
+    <br><br>
+
+    <h2>OpenOffice</h2>
+    <p>Apache OpenOffice (anteriormente conocido como OpenOffice.org) es otra suite ofimática de código abierto y gratuita. Originalmente fue desarrollado por Sun Microsystems y ahora es mantenido por la Fundación Apache. Las aplicaciones principales de OpenOffice son:</p>
+    <ul>
+        <li><b>Writer:</b> procesador de textos.</li>
+        <li><b>Calc:</b> hoja de cálculo.</li>
+        <li><b>Impress:</b> presentaciones.</li>
+        <li><b>Draw:</b> gráficos y diagramas.</li>
+        <li><b>Base:</b> base de datos.</li>
+        <li><b>Math:</b> editor de fórmulas matemáticas.</li>
+    </ul>
+    <br><br>
+
+    <h2>Herramientas de Google</h2>
+    <p>Las herramientas de Google son una serie de aplicaciones en línea integradas en Google Drive, que permiten la creación, edición y almacenamiento de documentos en la nube. Estas herramientas incluyen:</p>
+    <ul>
+        <li><b>Google Docs:</b> un procesador de textos en línea similar a Microsoft Word y LibreOffice Writer.</li>
+        <li><b>Google Sheets:</b> una hoja de cálculo en línea similar a Microsoft Excel y LibreOffice Calc.</li>
+        <li><b>Google Slides:</b> una herramienta para crear presentaciones en línea similar a Microsoft PowerPoint y LibreOffice Impress.</li>
+        <li><b>Google Forms:</b> una herramienta para crear formularios y encuestas en línea.</li>
+        <li><b>Google Drawings:</b> una aplicación para crear dibujos y diagramas.</li>
+        <li><b>Google Keep:</b> una herramienta de notas y listas.</li>
+        <li><b>Google Sites:</b> una aplicación para crear sitios web sencillos.</li>
+    </ul>
+    <p>Las herramientas de Google se destacan por su capacidad de colaboración en tiempo real, donde múltiples usuarios pueden trabajar simultáneamente en el mismo documento, hoja de cálculo o presentación. También se integran perfectamente con otros servicios de Google, como Google Calendar y Gmail.</p>
+
+    <center><a href="indexmemoria.html" id="btn">Iniciar Prueba</a></center>
+    <br><br><br><br>
+
+</div>
+
+	<script>
+		let stars = document.getElementById('stars')
+		let moon = document.getElementById('moon')
+		let mountains_behind = document.getElementById('mountains_behind')
+		let Text = document.getElementById('Text')
+		let btn = document.getElementById('btn')
+		let mountains_front = document.getElementById('mountains_front')
+		let header = document.querySelector('header')
+
+		window.addEventListener('scroll', function(){
+			let value = window.scrollY;
+			stars.style.left = value * 0.25 + 'px';
+			moon.style.top = value * 1.05 + 'px';
+			mountains_behind.style.top = value * 0.5 + 'px';
+			mountains_front.style.top = value * 0 + 'px';
+			Text.style.marginRight = value * 4 + 'px';
+			Text.style.marginTop = value * 1.5 + 'px';
+			btn.style.marginTop = value * 1.5 + 'px';
+			header.style.top = value * 0.5 + 'px';
+		})
+	</script>
+</body>
+</html>

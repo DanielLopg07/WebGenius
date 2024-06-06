@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<header>
+		<img width="100" height="auto" src="WebGeniusLogo.png" class="logo"></img>
+		<ul>
+			<li><a href="index.html">Inicio</a></li> 
+			<li><a href="Estética.html">Estética</a></li> 
+			<li><a href="Administración.html">Administración</a></li> 
+			<li><a href="Ética.html">Ética</a></li> 
+			<li><a href="Contabilidad.html">Contabilidad</a></li> 
+			<li><a href="Computación.html">Computación</a></li> 
+			<li><a href="Ingles.html">Inglés</a></li> 
+			<li><a href="Sociales.html">Sociales</a></li> 
+			<li><a href="Matemáticas.html">Matemáticas</a></li> 
+		</ul>
+	</header>
+	<section>
+		<img src="stars.png" id="stars">
+		<img src="moon.png" id="moon">
+		<img src="mountains_behind.png" id="mountains_behind">
+		<h2 id="Text">Religión</h2>
+		<a href="#sec" id="btn">Iniciar</a>
+		<img src="mountains_front.png" id="mountains_front">
+	</section>
+	<div class="sec" id="sec">
+    <h2>¿Por qué debemos orar?</h2>
+<ul>
+    <li><strong>Conexión y Comunicación</strong>: Orar nos permite mantener una relación íntima y hablar directamente con Dios.</li>
+    <li><strong>Pedir y Recibir</strong>: Según Mateo 7:7 y Marcos 11:24, la oración es un medio para presentar peticiones y recibir bendiciones.</li>
+    <li><strong>Fortaleza Espiritual</strong>: La oración nutre el espíritu y fortalece la fe.</li>
+    <li><strong>Fidelidad y Fe</strong>: Hebreos 11:6 resalta la importancia de la fe para agradar a Dios y hacer efectiva la oración.</li>
+    <li><strong>Obediencia y Acción</strong>: Orar implica actuar coherentemente con lo que se pide y alinear nuestra vida con la voluntad de Dios.</li>
+</ul>
+<br><br>
+
+<h2>Textos Bíblicos</h2>
+<ul>
+    <li><strong>Mateo 7:7</strong>: "Pedid y se os dará; buscad y hallaréis; llamad y se os abrirá."</li>
+    <li><strong>Marcos 11:24</strong>: "Por tanto, os digo que todo lo que pidáis en oración, creed que lo recibiréis, y os vendrá."</li>
+    <li><strong>Hebreos 11:6</strong>: "Pero sin fe es imposible agradar a Dios, porque es necesario que el que se acerca a Dios crea que él existe."</li>
+</ul>
+<br><br>
+
+<h2>El Amor de Dios</h2>
+<p>La Biblia enseña sobre el amor de Dios y su importancia:</p>
+<ul>
+    <li><strong>Dios es Amor</strong>: La naturaleza de Dios es amor, según 1 Juan 4:8.</li>
+    <li><strong>El Mandamiento del Amor</strong>: Amar a Dios y al prójimo es fundamental, como enseñó Jesús en Mateo 22:37-39.</li>
+    <li><strong>El Amor de Dios a través de Jesús</strong>: Juan 3:16 muestra cómo Dios manifestó su amor a través de Jesucristo.</li>
+    <li><strong>Amar a los Demás</strong>: Los creyentes deben amarse unos a otros como Dios los ama, como se menciona en 1 Juan 4:11-12.</li>
+    <li><strong>El Amor y la Obediencia</strong>: Amar a Dios implica obedecer sus mandamientos, según Juan 14:15.</li>
+</ul>
+
+
+	<center><iframe width="560" height="315" src="https://www.youtube.com/embed/L25_tArrvxw?si=Z8NxzM2iHGo88yoS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></center>
+
+	<center><a href="indexR.html" id="btn">Iniciar Prueba</a></center>
+		<br><br><br><br>
+
+	</div>
+	<script>
+		let stars = document.getElementById('stars')
+		let moon = document.getElementById('moon')
+		let mountains_behind = document.getElementById('mountains_behind')
+		let Text = document.getElementById('Text')
+		let btn = document.getElementById('btn')
+		let mountains_front = document.getElementById('mountains_front')
+		let header = document.querySelector('header')
+
+		window.addEventListener('scroll', function(){
+			let value = window.scrollY;
+			stars.style.left = value * 0.25 + 'px';
+			moon.style.top = value * 1.05 + 'px';
+			mountains_behind.style.top = value * 0.5 + 'px';
+			mountains_front.style.top = value * 0 + 'px';
+			Text.style.marginRight = value * 4 + 'px';
+			Text.style.marginTop = value * 1.5 + 'px';
+			btn.style.marginTop = value * 1.5 + 'px';
+			header.style.top = value * 0.5 + 'px';
+		})
+	</script>
+</body>
+</html>

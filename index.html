@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<header>
+		<img width="100" height="auto" src="WebGeniusLogo.png" class="logo"></img>
+		<ul>
+			<li><a href="Estética.html">Estética</a></li> 
+			<li><a href="Administración.html">Administración</a></li> 
+			<li><a href="Ética.html">Ética</a></li> 
+			<li><a href="Contabilidad.html">Contabilidad</a></li> 
+			<li><a href="Computación.html">Computación</a></li> 
+			<li><a href="Ingles.html">Inglés</a></li> 
+			<li><a href="Sociales.html">Sociales</a></li> 
+			<li><a href="Matemáticas.html">Matemáticas</a></li> 
+			<li><a href="Religión.html">Religión</a></li> 
+		</ul>
+	</header>
+	<section>
+		<img src="stars.png" id="stars">
+		<img src="moon.png" id="moon">
+		<img src="mountains_behind.png" id="mountains_behind">
+		<h2 id="Text">Inicio</h2>
+		<a href="#sec" id="btn">Iniciar</a>
+		<img src="mountains_front.png" id="mountains_front">
+	</section>
+	<div class="sec" id="sec">
+
+		<h2>¿Quiénes somos?</h2>
+		<p>WebGenius es un sitio web integral de enseñanza académica dedicado a brindarles a los estudiantes de nivel medio el apoyo que necesitan para triunfar en sus estudios. Nuestra misión es fomentar una comunidad de aprendizaje vibrante donde los estudiantes puedan explorar sus intereses académicos, desarrollar su pensamiento crítico y alcanzar su máximo potencial.</p>
+		<br><br>
+
+		<h2>Misión:</h2>
+    	<p>Nuestra misión es proporcionar un entorno académico en línea que integre de manera efectiva la tecnología para facilitar el aprendizaje, promoviendo la excelencia educativa, la inclusión y la colaboración entre estudiantes de nivel básico y profesionales de diversas disciplinas.</p>
+    	<br><br>
+
+    	<h2>Visión:</h2>
+		<p>Nos visualizamos como líderes en la innovación educativa, siendo reconocidos por nuestra capacidad para aprovechar al máximo las herramientas tecnológicas disponibles, ofreciendo una experiencia de aprendizaje dinámica y centrada en el estudiante que inspire el crecimiento personal y profesional.</p>
+		<br><br>
+
+		<h2>Objetivo General:</h2>
+		<p>El objetivo general de nuestra plataforma es proporcionar un ambiente virtual de aprendizaje que fomente la adquisición de conocimientos, habilidades y competencias relevantes para el siglo XXI, a través de recursos educativos de calidad y metodologías pedagógicas innovadoras.</p>
+		<br><br>
+
+	<h2>Objetivos Específicos:</h2>
+	<ul>
+    	<li>Facilitar el acceso a contenidos educativos actualizados y pertinentes en diversas áreas de conocimiento.</li>
+    	<li>Promover la interacción y colaboración entre estudiantes y profesionales a través de herramientas tecnológicas y actividades de aprendizaje colaborativo.</li>
+    	<li>Implementar estrategias de evaluación formativa que permitan retroalimentar el proceso de aprendizaje de manera efectiva.	</li>
+    	<li>Desarrollar y mantener una plataforma tecnológica segura, confiable y fácil de usar para todos los usuarios.</li>
+    	<li>Fomentar la inclusión y la diversidad, asegurando que nuestra plataforma sea accesible para personas de diferentes orígenes y habilidades.</li>
+   		<li>Establecer alianzas estratégicas con instituciones educativas y organizaciones para enriquecer la oferta educativa y ampliar el alcance de nuestra plataforma.</li>
+	</ul>
+
+	</div>
+	<script>
+		let stars = document.getElementById('stars')
+		let moon = document.getElementById('moon')
+		let mountains_behind = document.getElementById('mountains_behind')
+		let Text = document.getElementById('Text')
+		let btn = document.getElementById('btn')
+		let mountains_front = document.getElementById('mountains_front')
+		let header = document.querySelector('header')
+
+		window.addEventListener('scroll', function(){
+			let value = window.scrollY;
+			stars.style.left = value * 0.25 + 'px';
+			moon.style.top = value * 1.05 + 'px';
+			mountains_behind.style.top = value * 0.5 + 'px';
+			mountains_front.style.top = value * 0 + 'px';
+			Text.style.marginRight = value * 4 + 'px';
+			Text.style.marginTop = value * 1.5 + 'px';
+			btn.style.marginTop = value * 1.5 + 'px';
+			header.style.top = value * 0.5 + 'px';
+		})
+	</script>
+</body>
+</html>

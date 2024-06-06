@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<header>
+		<img width="100" height="auto" src="WebGeniusLogo.png" class="logo"></img>
+		<ul>
+			<li><a href="index.html">Inicio</a></li> 
+			<li><a href="Estética.html">Estética</a></li> 
+			<li><a href="Administración.html">Administración</a></li> 
+			<li><a href="Ética.html">Ética</a></li> 
+			<li><a href="Contabilidad.html">Contabilidad</a></li> 
+			<li><a href="Computación.html">Computación</a></li> 
+			<li><a href="Ingles.html">Inglés</a></li> 
+			<li><a href="Sociales.html">Sociales</a></li> 
+			<li><a href="Religión.html">Religión</a></li> 
+		</ul>
+	</header>
+	<section>
+		<img src="stars.png" id="stars">
+		<img src="moon.png" id="moon">
+		<img src="mountains_behind.png" id="mountains_behind">
+		<h2 id="Text">Matemáticas</h2>
+		<a href="#sec" id="btn">Iniciar</a>
+		<img src="mountains_front.png" id="mountains_front">
+	</section>
+	<div class="sec" id="sec">
+
+		<h2>Triángulo rectángulo:</h2>
+			<p>En un triángulo rectángulo, uno de los ángulos es de 90 grados. La trigonometría se utiliza para relacionar los ángulos y los lados del triángulo. Esto es útil en geometría para calcular distancias y ángulos, así como en programación para resolver problemas de posicionamiento y movimiento en sistemas de coordenadas.</p>
+
+		<br><br>
+		<center><iframe width="560" height="315" src="https://www.youtube.com/embed/-SzDLcFE4bo?si=v5gJKLFrBVnbMWUt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></center>
+		<br><br>
+
+		<h2>Círculo unitario:</h2>
+			<p>El círculo unitario es un círculo de radio 1 centrado en el origen de un sistema de coordenadas cartesianas. En trigonometría, se utiliza para relacionar las funciones trigonométricas con las coordenadas de puntos en la circunferencia. En programación, el círculo unitario es útil para representar funciones trigonométricas y para conversiones entre coordenadas polares y cartesianas.</p>
+
+		<br><br>
+		<center><iframe width="560" height="315" src="https://www.youtube.com/embed/C_wyPbiYaxY?si=YWZm-zFLGEPZrm6h" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></center>
+		<br><br>
+
+		<h2>Triángulo acutángulo:</h2>
+			<p>Un triángulo acutángulo es aquel en el que todos los ángulos son agudos (menores a 90 grados). La trigonometría se aplica en este tipo de triángulos para calcular longitudes de lados y ángulos, lo que es útil en geometría, física y diversas aplicaciones de programación, como juegos, gráficos 3D y simulaciones físicas.</p>
+
+		<br><br>
+		<center><iframe width="560" height="315" src="https://www.youtube.com/embed/z7p2xprB2Ys?si=Ag92aeD2LjNLuIor" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></center>
+		
+
+		<center><a href="indexMR.html" id="btn">Iniciar Prueba</a></center>
+		<br><br>
+	</div>
+	<script>
+		let stars = document.getElementById('stars')
+		let moon = document.getElementById('moon')
+		let mountains_behind = document.getElementById('mountains_behind')
+		let Text = document.getElementById('Text')
+		let btn = document.getElementById('btn')
+		let mountains_front = document.getElementById('mountains_front')
+		let header = document.querySelector('header')
+
+		window.addEventListener('scroll', function(){
+			let value = window.scrollY;
+			stars.style.left = value * 0.25 + 'px';
+			moon.style.top = value * 1.05 + 'px';
+			mountains_behind.style.top = value * 0.5 + 'px';
+			mountains_front.style.top = value * 0 + 'px';
+			Text.style.marginRight = value * 4 + 'px';
+			Text.style.marginTop = value * 1.5 + 'px';
+			btn.style.marginTop = value * 1.5 + 'px';
+			header.style.top = value * 0.5 + 'px';
+		})
+	</script>
+</body>
+</html>

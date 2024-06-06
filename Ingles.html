@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<header>
+		<img width="100" height="auto" src="WebGeniusLogo.png" class="logo"></img>
+		<ul>
+			<li><a href="index.html">Inicio</a></li> 
+			<li><a href="Estética.html">Estética</a></li> 
+			<li><a href="Administración.html">Administración</a></li> 
+			<li><a href="Ética.html">Ética</a></li> 
+			<li><a href="Contabilidad.html">Contabilidad</a></li> 
+			<li><a href="Computación.html">Computación</a></li> 
+			<li><a href="Sociales.html">Sociales</a></li> 
+			<li><a href="Matemáticas.html">Matemáticas</a></li> 
+			<li><a href="Religión.html">Religión</a></li> 
+		</ul>
+	</header>
+	<section>
+		<img src="stars.png" id="stars">
+		<img src="moon.png" id="moon">
+		<img src="mountains_behind.png" id="mountains_behind">
+		<h2 id="Text">Inglés</h2>
+		<a href="#sec" id="btn">Iniciar</a>
+		<img src="mountains_front.png" id="mountains_front">
+	</section>
+	<div class="sec" id="sec">
+		<center><h1>Types of Software and Common Use Cases:</h1></center>
+		<h2>E-commerce Websites (Shopping)</h2>
+<ul>
+    <li>E-commerce software: Platforms like Shopify, WooCommerce, or Magento allow you to create and manage an online store, including product management, payments, shipping, and customers.</li>
+    <li>Inventory management software: Tools to track product stock, inventory levels, and sales points.</li>
+    <li>Customer service software: Chatbots, ticketing systems, and knowledge bases to answer questions and resolve customer issues.</li>
+    <li>Web analytics software: Tools like Google Analytics or Adobe Analytics to monitor website traffic, conversions, and user behavior.</li>
+</ul>
+<h2>Educational Platforms (Education)</h2>
+<ul>
+    <li>Learning management systems (LMS): Platforms like Moodle or Canvas allow you to create and manage online courses, including content delivery, assessments, and student progress tracking.</li>
+    <li>Content creation tools: Text editors, presentation tools, and video recording software to create educational materials.</li>
+    <li>Collaboration tools: Discussion forums, chat rooms, and video conferencing tools to facilitate communication between students and00 teachers.</li>
+    <li>Assessment software: Tools to create and administer exams, quizzes, and assignments.</li>
+</ul>
+<h2>Sports Websites (Sports)</h2>
+<ul>
+    <li>Event management software: Tools to create and manage sporting events, including participant registration, event scheduling, and results tracking.</li>
+    <li>Sports statistics software: Tools to collect and analyze match and player data.</li>
+    <li>Live streaming software: Platforms to broadcast sporting events live over the internet.</li>
+    <li>Forums and social media: Tools for sports fans to connect with each other and share news and opinions.</li>
+</ul>
+<h2>Other Types of Software</h2>
+<ul>
+    <li>Social media: Platforms like Facebook, Twitter, and Instagram allow users to create profiles, share content, and interact with other users.</li>
+    <li>Productivity tools: Software like Google Workspace or Microsoft Office 365 allow users to create and edit documents, spreadsheets, and presentations.</li>
+    <li>Project management tools: Software like Asana or Trello allow teams to plan, organize, and track work.</li>
+    <li>Customer service tools: Chatbots, ticketing systems, and knowledge bases to answer questions and resolve customer issues.</li>
+</ul>
+<h2>News Websites</h2>
+<ul>
+    <li>Content management system (CMS): Platforms like WordPress or Drupal allow journalists to publish and edit news articles, images, and videos.</li>
+    <li>Social media tools: Integrations with social media to share news articles and increase reach.</li>
+    <li>Web analytics software: Tools like Google Analytics or Adobe Analytics to monitor website traffic, conversions, and user behavior.</li>
+    <li>SEO tools: Tools to optimize website content for search engines.</li>
+</ul>
+<h2>Business Websites</h2>
+<ul>
+    <li>Customer relationship management (CRM) software: Tools to manage customer relationships, such as leads, opportunities, and customers.</li>
+    <li>Email marketing software: Tools to create and send email marketing campaigns.</li>
+    <li>Live chat software: Tools to chat with customers in real time and answer their questions.</li>
+    <li>Web analytics software: Tools like Google Analytics or Adobe Analytics to monitor website traffic, conversions, and user behavior.</li>
+</ul>
+<h2>Non-Profit Websites</h2>
+<ul>
+    <li>Online donation software: Platforms to accept online donations securely.</li>
+    <li>Volunteer management tools: Software to manage volunteers, including scheduling shifts and tracking progress.</li>
+    <li>Fundraising tools: Tools to create and manage fundraising campaigns.</li>
+    <li>Web analytics software: Tools like Google Analytics or Adobe Analytics to monitor website traffic, conversions, and user behavior.</li>
+</ul>
+<h2>Government Websites</h2>
+<ul>
+    <li>Authentication and login software: Tools to allow citizens to access government services online securely.</li>
+    <li>Document management software: Tools to store, share, and manage government documents.</li>
+    <li>Citizen engagement tools: Tools for citizens to engage with the government and share their ideas.</li>
+    <li>Web analytics software: Tools like Google Analytics or Adobe Analytics to monitor website traffic, conversions, and user behavior.</li>
+</ul>
+	</div>
+	<script>
+		let stars = document.getElementById('stars')
+		let moon = document.getElementById('moon')
+		let mountains_behind = document.getElementById('mountains_behind')
+		let Text = document.getElementById('Text')
+		let btn = document.getElementById('btn')
+		let mountains_front = document.getElementById('mountains_front')
+		let header = document.querySelector('header')
+
+		window.addEventListener('scroll', function(){
+			let value = window.scrollY;
+			stars.style.left = value * 0.25 + 'px';
+			moon.style.top = value * 1.05 + 'px';
+			mountains_behind.style.top = value * 0.5 + 'px';
+			mountains_front.style.top = value * 0 + 'px';
+			Text.style.marginRight = value * 4 + 'px';
+			Text.style.marginTop = value * 1.5 + 'px';
+			btn.style.marginTop = value * 1.5 + 'px';
+			header.style.top = value * 0.5 + 'px';
+		})
+	</script>
+</body>
+</html>

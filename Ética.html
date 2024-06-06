@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<header>
+		<img width="100" height="auto" src="WebGeniusLogo.png" class="logo"></img>
+		<ul>
+			<li><a href="index.html">Inicio</a></li> 
+			<li><a href="Estética.html">Estética</a></li> 
+			<li><a href="Administración.html">Administración</a></li> 
+			<li><a href="Contabilidad.html">Contabilidad</a></li> 
+			<li><a href="Computación.html">Computación</a></li> 
+			<li><a href="Ingles.html">Inglés</a></li> 
+			<li><a href="Sociales.html">Sociales</a></li> 
+			<li><a href="Matemáticas.html">Matemáticas</a></li> 
+			<li><a href="Religión.html">Religión</a></li> 
+		</ul>
+	</header>
+	<section>
+		<img src="stars.png" id="stars">
+		<img src="moon.png" id="moon">
+		<img src="mountains_behind.png" id="mountains_behind">
+		<h2 id="Text">Ética</h2>
+		<a href="#sec" id="btn">Iniciar</a>
+		<img src="mountains_front.png" id="mountains_front">
+	</section>
+	<div class="sec" id="sec">
+    <ul>
+        <strong><h2>Integridad Académica:</h2></strong> 
+        <li>Impulsamos y defendemos la integridad académica en todas nuestras acciones, adhiriéndonos a los estándares éticos de honestidad y originalidad en la investigación y el aprendizaje.</li>
+        <br><br>
+        <strong><h2>Protección de la Privacidad:</h2></strong> 
+        <li>Garantizamos la privacidad y confidencialidad de la información personal de nuestros usuarios y clientes, implementando medidas de seguridad sólidas y cumpliendo con las regulaciones de privacidad vigentes.</li>
+        <br><br>
+        <strong><h2>Accesibilidad y Equidad Educativa:</h2></strong> 
+    	<li>Creamos soluciones tecnológicas y académicas accesibles para todos, independientemente de su origen, género, capacidades o circunstancias, promoviendo la igualdad de oportunidades en la educación.</li>
+        <br><br>
+        <strong><h2>Responsabilidad Social y Ambiental:</h2></strong> 
+    	<li>Contribuimos al bienestar social y ambiental mediante prácticas empresariales sostenibles y responsables, minimizando impactos negativos y buscando activamente formas de generar un impacto positivo.</li>
+        <br><br>
+        <strong><h2>Transparencia y Honestidad:</h2></strong> 
+    	<li>Mantenemos transparencia en todas nuestras comunicaciones y prácticas empresariales, proporcionando información clara y precisa sobre nuestros productos, servicios y actividades.</li>
+        <br><br>
+        <strong><h2>Innovación Ética:</h2></strong> 
+        <li>Fomentamos la innovación de manera ética y responsable, considerando los posibles impactos sociales, éticos y ambientales de nuestras tecnologías y soluciones académicas.</li>
+        <br><br>
+        <strong><h2>Colaboración y Respeto:</h2></strong> 
+        <li>Promovemos un ambiente de trabajo colaborativo y respetuoso, donde se valore la diversidad de opiniones y se fomente el intercambio de ideas y conocimientos.</li>
+        <br><br>
+        <strong><h2>Cumplimiento Legal y Normativo:</h2></strong> 
+        <li>Respetamos y cumplimos todas las leyes, regulaciones y normativas aplicables en todas nuestras operaciones y actividades académicas y tecnológicas.</li>
+        <br><br>
+        <strong><h2>Educación Continua y Conciencia Ética:</h2></strong> 
+        <li>Promovemos la educación continua sobre ética en la tecnología y en el ámbito académico, tanto dentro de nuestra empresa como en la comunidad en general.</li>
+        <br><br>
+        <strong><h2>Responsabilidad Personal:</h2></strong> 
+        <li>Cada miembro de WebGenius es responsable de adherirse a este código de ética y de actuar éticamente en todas las situaciones, demostrando un compromiso con la integridad y la excelencia académica y tecnológica.</li>
+    </ul>
+
+	</div>
+	<script>
+		let stars = document.getElementById('stars')
+		let moon = document.getElementById('moon')
+		let mountains_behind = document.getElementById('mountains_behind')
+		let Text = document.getElementById('Text')
+		let btn = document.getElementById('btn')
+		let mountains_front = document.getElementById('mountains_front')
+		let header = document.querySelector('header')
+
+		window.addEventListener('scroll', function(){
+			let value = window.scrollY;
+			stars.style.left = value * 0.25 + 'px';
+			moon.style.top = value * 1.05 + 'px';
+			mountains_behind.style.top = value * 0.5 + 'px';
+			mountains_front.style.top = value * 0 + 'px';
+			Text.style.marginRight = value * 4 + 'px';
+			Text.style.marginTop = value * 1.5 + 'px';
+			btn.style.marginTop = value * 1.5 + 'px';
+			header.style.top = value * 0.5 + 'px';
+		})
+	</script>
+</body>
+</html>
